@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * binary_tree_depth - calculate the depth of a tree(root)
+ * binary_tree_depth - calculate the depth of a tree
  * @tree: pointer to the root node
  * Return: size_t
  */
