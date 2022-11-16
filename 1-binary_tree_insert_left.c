@@ -7,13 +7,13 @@
  * Return: the pointer to the new node created or null on failure
  * or null if the parent is null
  *
- * Desc: if node already ahs left child the new node will take its place
+ * Desc: if node already has left child the new node will take its place
  * and the old right-child must be set as the left-child of the new node
  */
 
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-	binary_tree_t *node = NULL;
+	binary_tree_t *node = NULL, *temp = NULL;
 
 	if (parent == NULL)
 		return (NULL);
@@ -36,9 +36,12 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 		}
 		else
 		{
-			parent->left->parent = node;
+			/**parent->left->parent = node;
 			node->left = parent->left;
+			parent->left = node;*/
+			temp = parent->left;
 			parent->left = node;
+			node->left = temp;
 			return (node);
 		}
 	}
