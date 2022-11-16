@@ -7,7 +7,7 @@
  * Return: the pointer to the new node created or null on failure
  * or null if the parent is null
  *
- * Desc: if node already ahs left child the new node will take its place
+ * Desc: if node already has left child the new node will take its place
  * and the old right-child must be set as the left-child of the new node
  */
 
