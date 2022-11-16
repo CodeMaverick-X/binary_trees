@@ -18,11 +18,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
 
 	height_l = binary_tree_height(tree->left);
 	height_r = binary_tree_height(tree->right);
-
-	if (height_l >= height_r)
-		max = height_l + 1;
-	else
-		max = height_r + 1;
+	/**Ternary operator*/
+	max = height_l >= height_r ? height_l + 1 : height_r + 1;
 
 
 	return (max);
