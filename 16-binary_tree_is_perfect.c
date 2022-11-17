@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /**
  * binary_tree_depth - calculate the depth of a tree
  * @tree: pointer to nodes
